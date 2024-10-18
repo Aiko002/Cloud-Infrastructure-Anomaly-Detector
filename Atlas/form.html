@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Sign Up Form -->
+            <form id="signUpForm" class="form">
+                <h2>Sign Up</h2>
+                <label>Username</label> 
+                <input type="text" id="username" required><br>
+                <label>Email</label> 
+                <input type="email" id="signupEmail" required><br>
+                <label>Password</label> 
+                <input type="password" id="signupPassword" required><br>
+                <label>Confirm Password</label> 
+                <input type="password" id="confirmPassword" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <!-- Sign In Form -->
+            <form id="signInForm" class="form" style="display: none;">
+                <h2>Sign In</h2>
+                <label>Email</label> 
+                <input type="email" id="signinEmail" required><br>
+                <label>Password</label> 
+                <input type="password" id="signinPassword" required>
+                <button type="submit">Sign In</button>
+            </form>
+            <!-- Toggle between forms -->
+            <div class="form-toggle">
+                <button id="signUpBtn" onclick="showSignUp()">Sign Up</button>
+                <button id="signInBtn" onclick="showSignIn()">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

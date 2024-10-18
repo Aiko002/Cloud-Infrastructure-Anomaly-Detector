@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #029a72, #192440);
+    overflow: visible;
+}
+
+.container {
+    width: 500px; /* Increased width for a bigger container */
+    padding: 60px; /* More padding for a broader look */
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.2); /* Larger, softer shadow */
+    backdrop-filter: blur(12px); /* Stronger blur for the glass effect */
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px; /* Smoother edges */
+    border: 5px solid rgba(63, 59, 59, 0.25); /* Slightly stronger border */
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 36px; /* Larger and bolder text */
+    font-weight: 700; /* Bolder */
+    letter-spacing: 1px;
+}
+
+.form-toggle {
+    margin: 40px; /* More spacing for cleaner layout */
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.form-toggle button {
+    padding: 12px 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 18px; /* Larger text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.form-toggle button:hover {
+    background-color: #029a72;
+    color: #192440;
+    border-color: #029a72;
+    transform: scale(1.1); /* Small hover scale effect */
+}
+
+.form input {
+    width: 100%;
+    padding: 18px; /* Larger input fields */
+    margin: 15px 0;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px; /* Larger input text */
+    font-weight: 500; /* Bolder input text */
+    transition: 0.3s ease;
+}
+
+.form input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); /* Focus scale effect */
+}
+
+button[type="submit"] {
+    margin-top: 30px;
+    width: 100%;
+    padding: 18px; /* Larger button */
+    background-color: #029a72;
+    color: #192440;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px; /* Larger, bolder text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #192440;
+    color: #029a72;
+    transform: scale(1.05); /* Slight hover scaling effect */
+}
+
+.form {
+    display: none;
+    transition: all 0.4s ease;
+}
+
+#signUpForm, #signInForm {
+    opacity: 3;
+}
+
+.show {
+    display: block !important;
+    opacity: 1;
+}
+
+.hidden {
+    display: none !important;
+}
