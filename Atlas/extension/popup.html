@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Anomaly Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cloud Anomaly Detector</h1>
+    <p>Click to activate anomaly detection</p>
+    <button id="activateBtn">Activate</button>
+    <div id="dashboard" style="display: none;">
+      <button id="deactivateBtn">Deactivate</button>
+      <h2>Anomaly Detected Counts:</h2>
+      <div>
+        <p>Type 1: <span id="anomalyCount1" style="color: green;">0</span></p>
+        <p>Type 2: <span id="anomalyCount2" style="color: green;">0</span></p>
+        <p>Type 3: <span id="anomalyCount3" style="color: green;">0</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

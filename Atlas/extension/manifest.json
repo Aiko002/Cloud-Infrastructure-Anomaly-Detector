@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Cloud Anomaly Detector",
+    "description": "Detect anomalies in cloud infrastructure.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": []
+  }
+  

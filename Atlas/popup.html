@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        max-width: 400px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      }
+
+      h2 {
+        color: #d9534f;
+      }
+
+      .anomaly-details {
+        margin-top: 10px;
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+      }
+
+      .anomaly-details p {
+        margin: 5px 0;
+      }
+
+      .button-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      button {
+        background-color: #5bc0de;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      button:hover {
+        background-color: #31b0d5;
+      }
+
+      button.resolve {
+        background-color: #5cb85c;
+      }
+
+      button.resolve:hover {
+        background-color: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Anomaly Detected!</h2>
+    <div class="anomaly-details">
+      <p><strong>Type:</strong> Resource Overload</p>
+      <p><strong>Severity:</strong> High</p>
+      <p><strong>Service:</strong> Database Cluster</p>
+      <p><strong>Time:</strong> 2024-10-18 14:35:12</p>
+    </div>
+
+    <div class="button-container">
+      <button class="resolve">Acknowledge</button>
+      <button class="more-info">More Info</button>
+    </div>
+  </body>
+</html>
